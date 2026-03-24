@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriaa Services | خدمات قريعة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kriaa Services</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#faq">الأسئلة</a></li>
+                <li><a href="https://www.instagram.com/kriaa_network_pro" target="_blank" class="nav-insta"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-bg-effect"></div>
+        <h1>🔥 اكبر حسابك بسهولة وبدون تعقيد</h1>
+        <p>خدمات سريعة — نتائج واقعية — دعم مباشر</p>
+        <a href="#services" class="btn-pulse">ابدأ الآن</a>
+    </section>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 ابحث عن خدمة (مثلاً: متابعين، لايكات)...">
+    </div>
+
+    <section id="services" class="services-container">
+        <h2 class="section-title">قائمة الأسعار والخدمات 🚀</h2>
+        <div class="services-grid" id="servicesGrid">
+            
+            <article class="service-card" data-category="insta">
+                <i class="fab fa-instagram service-icon icon-ig"></i>
+                <h3>1K متابعين Instagram</h3>
+                <p class="price">السعر: 10 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('متابعين انستجرام بجودة عالية لتعزيز بروفايلك')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Followers Instagram (10DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="tiktok">
+                <i class="fab fa-tiktok service-icon icon-tk"></i>
+                <h3>1K متابعين TikTok</h3>
+                <p class="price">السعر: 15 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('زيادة متابعين تيك توك لتفعيل ميزة اللايف')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Followers TikTok (15DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="insta">
+                <i class="fab fa-instagram service-icon icon-ig"></i>
+                <h3>1K لايكات Instagram</h3>
+                <p class="price">السعر: 5 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('لايكات فورية لزيادة التفاعل على منشوراتك')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Likes Instagram (5DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="tiktok">
+                <i class="fab fa-tiktok service-icon icon-tk"></i>
+                <h3>1K لايكات TikTok</h3>
+                <p class="price">السعر: 5 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('زيادة الإعجابات على فيديوهات التيك توك')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Likes TikTok (5DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="insta">
+                <i class="fab fa-instagram service-icon icon-ig"></i>
+                <h3>1K مشاهدات Reels</h3>
+                <p class="price">السعر: 1 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('مشاهدات ريلز سريعة لرفع الأرقام فوراً')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Views Reels (1DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="tiktok">
+                <i class="fab fa-tiktok service-icon icon-tk"></i>
+                <h3>1K مشاهدات TikTok</h3>
+                <p class="price">السعر: 1 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('مشاهدات تيك توك لزيادة انتشار الفيديوهات')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Views TikTok (1DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="youtube">
+                <i class="fab fa-youtube service-icon icon-yt"></i>
+                <h3>1K مشتركين YouTube</h3>
+                <p class="price">السعر: 25 DT</p>
+                <div class="btn-group">
+                    <button class="btn-desc" onclick="showDesc('مشتركين يوتيوب حقيقيين لزيادة أرقام القناة')">وصف الخدمة</button>
+                    <a href="#" class="btn-buy wa-link" data-service="1K Subscribers YouTube (25DT)">اطلب الآن عبر WhatsApp</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>تابعنا على Instagram: <a href="https://www.instagram.com/kriaa_network_pro">@kriaa_network_pro</a></p>
+        <p>&copy; 2026 Kriaa Services - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <a href="https://wa.me/216XXXXXXXX" class="floating-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
